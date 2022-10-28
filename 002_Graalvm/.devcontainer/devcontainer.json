@@ -1,12 +1,16 @@
 {
-    "name": "Graal vm Dev Environment",
+    "name": "Graalvm Dev Environment",
     "dockerComposeFile": "docker-compose.yml",
     "service": "env",
     "workspaceFolder": "/workspace",
 
     "forwardPorts": [5432, 5005, 8080],
+
     "extensions": [
-        
+       "redhat.java",
+       "redhat.vscode-xml",
+       "vscjava.vscode-maven",
+       "vscjava.vscode-java-pack"
     ],
 
     "settings": {

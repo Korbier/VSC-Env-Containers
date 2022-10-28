@@ -6,7 +6,10 @@
 
     "forwardPorts": [5432],
     "extensions": [
-        
+       "redhat.java",
+       "redhat.vscode-xml",
+       "vscjava.vscode-maven",
+       "vscjava.vscode-java-pack"
     ],
 
     "settings": {

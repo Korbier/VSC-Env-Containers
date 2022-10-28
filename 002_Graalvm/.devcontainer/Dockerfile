@@ -6,7 +6,11 @@ RUN microdnf install maven-1:3.6.3-14.el9.noarch -y; \
     rm /etc/alternatives/javac; \
     ln -s /opt/graalvm-ce-java17-22.3.0/bin/javac /etc/alternatives/javac; \
     ln -s /opt/graalvm-ce-java17-22.3.0/bin/java /etc/alternatives/java; \
-    echo 'JAVA_HOME=/opt/graalvm-ce-java17-22.3.0' > /etc/java/maven.conf
+    export JAVA_HOME=/opt/graalvm-ce-java17-22.3.0; \
+    export GRAALVM_HOME=/opt/graalvm-ce-java17-22.3.0; \
+    export PATH=${GRAALVM_HOME}/bin:$PATH; \
+    echo 'JAVA_HOME=/opt/graalvm-ce-java17-22.3.0' > /etc/java/maven.conf; \
+    gu install native-image
 
 RUN mkdir /root/.m2; \
     mkdir /workspace; \
