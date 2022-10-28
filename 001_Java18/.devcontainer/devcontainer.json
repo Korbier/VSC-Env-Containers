@@ -1,0 +1,16 @@
+{
+    "name": "Java 18 Dev Environment",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "env",
+    "workspaceFolder": "/workspace",
+
+    "forwardPorts": [5432],
+    "extensions": [
+        
+    ],
+
+    "settings": {
+
+    }
+
+}

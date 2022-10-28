@@ -1,0 +1,5 @@
+Dev environment :
+	. Graal VM 22.3.0
+	. Maven 3.6.3
+	. Git 2.31.1
+	. Postgres 14.1

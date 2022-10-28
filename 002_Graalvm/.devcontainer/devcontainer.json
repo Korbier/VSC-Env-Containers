@@ -1,0 +1,16 @@
+{
+    "name": "Graal vm Dev Environment",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "env",
+    "workspaceFolder": "/workspace",
+
+    "forwardPorts": [5432, 5005, 8080],
+    "extensions": [
+        
+    ],
+
+    "settings": {
+
+    }
+
+}
